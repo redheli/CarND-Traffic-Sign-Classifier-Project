@@ -1,12 +1,12 @@
-#**Traffic Sign Recognition**
+# **Traffic Sign Recognition**
 
 ---
-###Writeup
+### Writeup
 
 
 link to my [project code](https://github.com/redheli/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 
-###Data Set Summary & Exploration
+### Data Set Summary & Exploration
 
 #### Train and test dataset download from http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset
 
@@ -20,16 +20,18 @@ signs data set:
 
 I use pillow to resize the images to 32x32x3
 
-####2. visualization of the dataset.
+#### visualization of the dataset.
 
 Yield
 <img src="Yield.png" width="480"  />
 
 histogram for the distribution
 <img src="hits.png" width="480"  />
-###Design and Test a Model Architecture
 
-####1. Normalizes the data between 0.1 and 0.9 instead of 0 to 255
+
+### Design and Test a Model Architecture
+
+#### 1. Normalizes the data between 0.1 and 0.9 instead of 0 to 255
 
 ```
 def normalize(data):
@@ -41,11 +43,13 @@ I normalized the image data because it makes training easy.
 I did not grayscale the images, as color is important feature.
 
 
-####2. final model architecture
+#### 2. final model architecture
 
 My final model consisted of the following layers:
 
-| Layer         		|     Description	        					|Layer|Description|
+
+
+| Layer         		|     Description	        					| Layer | Description |
 |:---------------------:|:---------------------------------------------:|
 | Input         		| 32x32x3 RGB image   							|
 | Convolution 5x5     	| The output shape should be 28x28x6 	|
@@ -61,7 +65,7 @@ My final model consisted of the following layers:
 
 
 
-####3. Train model
+#### 3. Train model
 
 To train the model, I used tensorflow AdamOptimizer,learning rate 0.0009, EPOCHS = 30
 BATCH_SIZE = 256.
@@ -69,7 +73,7 @@ BATCH_SIZE = 256.
 
 
 
-####4. Increase the epochs, I get better training accuracy 0.99.
+#### 4. Increase the epochs, I get better training accuracy 0.99.
 Of course I modified the model layer to from original LeNet-5 to currenr structure.
 
 
@@ -93,7 +97,7 @@ Here are five German traffic signs that I found on the web:
 <img src="custom/example_00035.png" width="200"  />
 
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+####2. model's predictions
 
 **I got 100% accuracy!!!!**
 
