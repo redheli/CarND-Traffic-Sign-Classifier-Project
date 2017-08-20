@@ -47,7 +47,7 @@ I did not grayscale the images, as color is important feature.
 
 My final model consisted of the following layers:
 
-
+<img src="lll.png" width="480"  />
 
 | Layer         		|     Description	        					| Layer | Description |
 |:---------------------:|:---------------------------------------------:|
