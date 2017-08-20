@@ -79,18 +79,6 @@ My final model results were:
 * validation set accuracy of 0.93
 * test set accuracy of 0.942
 
-If an iterative approach was chosen:
-* What was the first architecture that was tried and why was it chosen?
-* What were some problems with the initial architecture?
-* How was the architecture adjusted and why was it adjusted? Typical adjustments could include choosing a different model architecture, adding or taking away layers (pooling, dropout, convolution, etc), using an activation function or changing the activation function. One common justification for adjusting an architecture would be due to overfitting or underfitting. A high accuracy on the training set but low accuracy on the validation set indicates over fitting; a low accuracy on both sets indicates under fitting.
-* Which parameters were tuned? How were they adjusted and why?
-* What are some of the important design choices and why were they chosen? For example, why might a convolution layer work well with this problem? How might a dropout layer help with creating a successful model?
-
-If a well known architecture was chosen:
-* What architecture was chosen?
-* Why did you believe it would be relevant to the traffic sign application?
-* How does the final model's accuracy on the training, validation and test set provide evidence that the model is working well?
-
 
 ###Test a Model on New Images
 
@@ -98,42 +86,23 @@ If a well known architecture was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][image4] ![alt text][image5] ![alt text][image6]
-![alt text][image7] ![alt text][image8]
+<img src="custom/example_00005.png" width="200"  />
+<img src="custom/example_00007.png" width="200"  />
+<img src="custom/example_00008.png" width="200"  />
+<img src="custom/example_00030.png" width="200"  />
+<img src="custom/example_00035.png" width="200"  />
 
-The first image might be difficult to classify because ...
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+
+**I got 100% accuracy!!!!**
 
 Here are the results of the prediction:
 
 | Image			        |     Prediction	        					|
 |:---------------------:|:---------------------------------------------:|
 | Stop Sign      		| Stop sign   									|
-| U-turn     			| U-turn 										|
-| Yield					| Yield											|
-| 100 km/h	      		| Bumpy Road					 				|
-| Slippery Road			| Slippery Road      							|
-
-
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
-
-####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
-
-The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
-
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
-
-| Probability         	|     Prediction	        					|
-|:---------------------:|:---------------------------------------------:|
-| .60         			| Stop sign   									|
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
-
-
-For the second image ...
-
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+| Keep left     			| Keep left 										|
+| Roundabout mandatory					| Roundabout mandatory											|
+| Children crossing| Children crossing|
+| Speed limit (20km/h)			| Speed limit (20km/h)     							|
