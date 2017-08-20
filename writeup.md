@@ -49,20 +49,6 @@ My final model consisted of the following layers:
 
 <img src="lll.png" width="480"  />
 
-| Layer         		|     Description	        					| Layer | Description |
-|:---------------------:|:---------------------------------------------:|
-| Input         		| 32x32x3 RGB image   							|
-| Convolution 5x5     	| The output shape should be 28x28x6 	|
-| RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 14x14x6 				|
-| Convolution 5x5	    | The output shape should be 10x10x16      									|
-| RELU	    |       									|
-| Max pooling	      	| 2x2 stride,  outputs 5x5x16 				|
-| Convolution 5x5	    | The output shape should be 1x1x400      									|Flatten|Input = 5x5x16. Output = 400|
-|Concat|Add last conv and flatten, Input = 400 + 400. Output = 800|
-| Fully connected		| Input = 800. Output = 43.        									|
-
-
 
 
 #### 3. Train model
